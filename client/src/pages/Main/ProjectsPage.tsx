@@ -75,11 +75,11 @@ const ProjectsPage = () => {
   return (
     <div className={classes.root}>
       <Paper className={classes.headerPaper}>
-        <AssignmentIcon
+        {/* <AssignmentIcon
           fontSize="large"
           color="primary"
           className={classes.headerIcon}
-        />
+        /> */}
         <div>
           <Typography variant={isMobile ? 'h6' : 'h5'} color="secondary">
             All Projects

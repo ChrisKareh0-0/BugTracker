@@ -51,23 +51,10 @@ const NavBar = () => {
             to="/"
             color="secondary"
           >
-            <img src={BugIcon} alt="logo" className={classes.svgImage} />
+            
             BugTracker
           </Button>
-          {!isMobile && (
-            <Typography variant="caption" color="secondary">
-              Made with{' '}
-              <FavoriteIcon style={{ fontSize: 10 }} color="primary" /> by{' '}
-              <Link
-                href={'https://github.com/amand33p'}
-                color="inherit"
-                target="_blank"
-                rel="noopener"
-              >
-                <strong>amand33p</strong>
-              </Link>
-            </Typography>
-          )}
+        
         </div>
       );
     } else {

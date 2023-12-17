@@ -56,7 +56,7 @@ const LoginPage = () => {
   return (
     <div>
       <Paper className={classes.root} elevation={2}>
-        <img src={BugIcon} alt="bug-logo" className={classes.titleLogo} />
+        
         <form onSubmit={handleSubmit(handleLogin)} className={classes.form}>
           <div className={classes.inputField}>
             <TextField
