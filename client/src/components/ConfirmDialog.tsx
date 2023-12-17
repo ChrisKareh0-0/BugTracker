@@ -15,6 +15,8 @@ import {
 } from '@material-ui/core';
 import { useDialogStyles } from '../styles/muiStyles';
 
+
+
 const ConfirmDialog: React.FC<{
   title: string;
   contentText: string;
@@ -38,6 +40,8 @@ const ConfirmDialog: React.FC<{
     actionFunc();
     handleDialogClose();
   };
+
+  
 
   const triggerButton = () => {
     if (triggerBtn.type === 'icon') {

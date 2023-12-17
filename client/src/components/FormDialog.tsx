@@ -13,10 +13,14 @@ import {
 } from '@material-ui/core';
 import { useDialogStyles } from '../styles/muiStyles';
 
+interface ChildPropsWithClose {
+  closeDialog?: () => void; // This will be an optional prop for children components.
+}
+
 const FormDialog: React.FC<{
   title: string;
   triggerBtn: TriggerButtonTypes;
-  children: React.ReactNode;
+  children:  React.ReactElement<ChildPropsWithClose>; 
 }> = ({ triggerBtn, children, title }) => {
   const classes = useDialogStyles();
   const [dialogOpen, setDialogOpen] = useState(false);
@@ -27,7 +31,9 @@ const FormDialog: React.FC<{
 
   const handleDialogOpen = () => {
     setDialogOpen(true);
-    triggerBtn.type === 'menu' && triggerBtn.closeMenu();
+    if (triggerBtn.type === 'menu' && triggerBtn.closeMenu) {
+      triggerBtn.closeMenu(); // This was already here, but ensure that closeMenu is a function before calling it.
+    }
   };
 
   const triggerButton = () => {

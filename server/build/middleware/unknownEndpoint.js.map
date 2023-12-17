@@ -1,0 +1,1 @@
+{"version":3,"file":"unknownEndpoint.js","sourceRoot":"","sources":["../../src/middleware/unknownEndpoint.ts"],"names":[],"mappings":";;AAEA,IAAM,sBAAsB,GAAG,UAAC,IAAa,EAAE,GAAa;IAC1D,GAAG,CAAC,MAAM,CAAC,GAAG,CAAC,CAAC,IAAI,CAAC,EAAE,OAAO,EAAE,mBAAmB,EAAE,CAAC,CAAC;AACzD,CAAC,CAAC;AAEF,kBAAe,sBAAsB,CAAC"}
